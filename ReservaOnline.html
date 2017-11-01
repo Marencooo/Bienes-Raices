@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title> Bienes Raíces </title>
+    <link href="Librerias/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="Style/StyleReservaOnline.css" rel="stylesheet" type="text/css">
+    <link href="Style/StyleReservaOnlinePropiedad.css" rel="stylesheet" type="text/css">
+    <link href="Style/StyleIndexContacto.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Librerias/axios.min.js"></script>
+    <script src="Librerias/js/jquery.min.js"></script>
+    <script type="text/javascript" src="Js/ReservaOnline.js"></script>
+</head>
+<body onload="CargarReservaOnline(),OcultarReservaPropiedad()">
+    <iframe id="IframeMenu" scrolling="no"  width="100%" src="Menu.html"></iframe>
+    <section id="ReservaOnline">
+        <div id="DivReservaOnline">
+            <div id="Inmuebles">
+                <div class="Container-fluid" id="TableInmuebles">
+                    <div id="DivInmuebles" class="row">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="Filtros">
+                <div class="FiltroDesplegable">
+                    <span id="Desplegarfiltro" class="glyphicon glyphicon-chevron-down" onclick="DesplegarFiltro()">
+                        Desplegar filtro
+                    </span>
+                </div>
+                <div id="FiltrosBusqueda">
+                        <form id="FormFiltros" action="" method="POST">
+                            
+                                <label for="VentaAlquiler">Tipo Comercializacion</label>
+                                <select name="TipoComercializacion" class="form-control input-sm" id="VentaAlquiler">
+                                    <option value="">No Filtrar </option>
+                                    <option value="Venta">Venta </option>
+                                    <option value="Alquiler">Alquiler </option>
+                                </select><br>
+
+                                <label>Tipo Inmueble</label><br>
+                                <div class="radio-inline">
+                                <label><input type="radio" name="TipoInmueble" value="">No Filtrar</label>
+                                </div>
+                                <div class="radio-inline">
+                                <label><input type="radio" name="TipoInmueble" value="Apartamento"> Apartamento</label>
+                                </div><br>
+                                <div class="radio-inline">
+                                <label><input type="radio" name="TipoInmueble" value="Casa"> Casa</label>
+                                </div>
+                                <div class="radio-inline">
+                                <label><input type="radio" name="TipoInmueble" value="Oficina"> Oficina</label>
+                                </div><br><br>
+
+                                <label>Departamento</label><br>
+                                    <select class="form-control input-sm" name="Departamento" id="Departamento2" onclick="">
+                                            <option value="">No Filtrar</option>
+                                            <option value="Canelones">Canelones</option>
+                                            <option value="Colonia">Colonia</option>
+                                            <option value="Montevideo">Montevideo</option>
+                                            <option value="Maldonado">Maldonado</option>
+                                            <option value="Rocha">Rocha</option>
+                                    </select><br>
+
+                                <label>Barrio</label><br>
+                                <select class="form-control input-sm" name="Barrio" id="Barrio2">
+                                        <option value="">No Filtrar</option>
+                                        <option value="Carrasco">Carrasco</option>
+                                        <option value="La Blanqueada">La Blanqueada</option>
+                                        <option value="Malvin">Malvin</option>
+                                        <option value="Punta Gorda">Punta Gorda</option>
+                                        <option value="Union">Union</option>
+                                </select><br>
+                            
+                                <label>Dormitorios</label><br>
+                                <div class="radio-inline">
+                                <label><input type="radio" id="Dormitorios" name="Dormitorios" value="">No Filtrar</label>
+                                </div><br>
+                                <div class="radio-inline">
+                                <label><input type="radio" id="Dormitorios" name="Dormitorios" value="1">1</label>
+                                </div>
+                                <div class="radio-inline">
+                                <label><input type="radio" id="Dormitorios" name="Dormitorios" value="2">2</label>
+                                </div>
+                                <div class="radio-inline">
+                                <label><input type="radio" id="Dormitorios" name="Dormitorios" value="3">3</label>
+                                </div><br>
+                                <div class="radio-inline">
+                                <label><input type="radio" id="Dormitorios" name="Dormitorios" value="4">4</label>
+                                </div>
+                                <div class="radio-inline">
+                                <label><input type="radio" id="Dormitorios" name="Dormitorios" value="5">5</label>
+                                </div>
+                                <div class="radio-inline">
+                                <label><input type="radio" id="Dormitorios" name="Dormitorios" value="6">6</label>
+                                </div><br>
+
+                                <input type="button" class="btn btn-primary" value="Filtrar" onclick="Filtros()">
+                                <input type="button" class="btn btn-danger" value="No Filtrar" onclick="LimpiarFiltros()">
+                            
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="ReservaOnlinePropiedad">
+        <div id="CargarInmuebleReservaOnline">
+            <div class="container">
+                <div id="DivPannel" class="panelb panel-success col-sm-6">
+
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+    <section id="Pie" class="Pie">
+      <iframe id="IframePie" scrolling="no" width="100%"src="Pie.html"></iframe>
+    </section>
+</body>
+<script>
+
+</script>
+</html>
+
+
+

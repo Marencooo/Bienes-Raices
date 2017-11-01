@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title> Bienes Raíces </title>
+    <link href="../Librerias/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../Style/StyleCmanager.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../Librerias/axios.min.js"></script>
+    <script src="../Librerias/js/jquery.min.js"></script>
+    <script src="../Librerias/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Js/cmanager.js"></script>
+    
+    
+</head>
+<body>
+<iframe id="IframeMenu" scrolling="no" style="border:none;"  width="100%" height="60px" src="cmanager.html"></iframe>
+<div class="container">
+
+    <div id="Equipo" class="container Oculto">
+        <div class="row">
+            <div id="DivFormEquipo" class="DivForm">
+                <h2 id="TituloEquipo"> Ingresar Empleado</h2>
+                <a class="Oculto" id="MostrarFormAlta" onclick="FormAlata('Empleado')">Dar de alta Empleado</a>
+                <form  action="" method="get" id="FormEquipo" >
+                    <div class="IdEmpleado row">
+                        <label class="control-label col-sm-5" for="id">Id Empleado:</label> 
+                        <input type="text" class="col-sm-4" readonly="readonly" name="id">
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-5" for="name">Nombre:</label>
+                        <input class="col-sm-4" type="text" maxlength="50" placeholder="Maximo 50 carácteres" id="name" name="name" required>
+
+                    </div>
+                    <div class="row">
+                        <label class="control-label col-sm-5" for="">Sucursal</label>
+                        <select class="col-sm-4" id="sucursal"  name="sucursal">
+                                <option value="Malvin"> Malvin</option>
+                                <option value="Centro"> Centro</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-5" for="mail">Mail</label>
+                        <input type="email" class="col-sm-4" maxlength="50" placeholder="Maximo 50 carácteres" id="mail" name="mail" required>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-5" for="numero">Numero</label>
+                        <input type="text" class="col-sm-4" id="numero" onkeyup="soloNumero('numero')" maxlength="15" placeholder="Maximo 15 numeros" name="numero" required>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-5" for="puesto">Puesto</label>
+                        <input  type="text" class="col-sm-4" name="puesto" id="puesto" required>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-5" for="foto">Imagen</label>
+                        <input  type="text" class="col-sm-4" name="imagen" id="imagen" required>
+                    </div>
+
+                    <input type="button" id="BtnModificarEmpleado" class=" Oculto BotonForm" value="Modificar" onclick="NuevoEmpleado('Modificar')" >
+                    <input type="button" id="BtnNuevoEmpleado" class=" BotonForm" value="Cargar" onclick="NuevoEmpleado('Nuevo')" >
+                </form>
+            </div>
+            
+        </div>
+        <div id="Contenedor" class="row">
+            <table id="TablaEquipo" class="Tabla">
+            </table>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script>
+    window.onload=function(){
+		MostrarEmpleado();
+	}
+</script>
+</html>

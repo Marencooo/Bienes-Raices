@@ -1,0 +1,45 @@
+body{
+    font-family: tahoma ;
+}
+
+.Icono{
+    width: 45px;
+    height: 45px;
+    padding-bottom: 5px;
+}
+
+#PieDePagina{
+    background-color: #270000;
+    color: white;
+    font-weight: bold;
+    font-size: 10px; 
+    padding: 2px;  
+}
+
+#PieDePagina a{
+    color: #D1CECE;
+}
+
+.PieDePaginaDatos{
+    margin-left: 40px;
+    position: absolute;
+}
+
+#PieDePaginaIcono{
+    margin-left: 90%;
+    position: relative;
+    bottom: 6px;
+}
+
+@media screen and (max-width: 1000px){
+    #PieDePaginaIcono{ margin-left: 85%;}
+}
+
+@media screen and (max-width: 700px){
+    #PieDePaginaIcono{ margin-left: 80%;}
+}
+
+@media screen and (max-width: 600px){
+    #PieDePaginaIcono{ margin-left: 75%;}
+    .PieDePaginaDatos{ margin-left: 20px;}
+}

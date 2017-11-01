@@ -1,0 +1,87 @@
+body{
+    font-family: tahoma ;
+}
+
+.title{
+    color: #555;
+}
+#IframeMenu{
+    border: 10px;
+    border-color: white;
+}
+#Equipo{
+    min-width: 300px;
+    padding: 0px 60px 60px 60px;
+}
+.Persona{
+    min-width: 230px;
+    max-width: 230px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    height: 361px;
+    border-radius: 3px;
+}
+.NuestroEquipo img{
+    width: 170px;
+    height: 190px;
+    border-radius: 3px;
+}
+
+.NuestroEquipo {
+    text-align: center;
+    padding-top: 70px;
+    color: #333;
+    background: #e4e4e4;
+}
+.NuestroEquipo h1{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.NuestroEquipo button{
+    background: #504f4f;
+    background-image: -webkit-linear-gradient(top, #504f4f, #5a5a5a);
+    background-image: -moz-linear-gradient(top, #504f4f, #5a5a5a);
+    background-image: -ms-linear-gradient(top, #504f4f, #5a5a5a);
+    background-image: -o-linear-gradient(top, #504f4f, #5a5a5a);
+    background-image: linear-gradient(to bottom, #504f4f, #5a5a5a);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+    margin-top: 33px;
+    margin-left: 15px;
+}
+.NuestroEquipo button:hover {
+    background: #2b3033;
+    background-image: -webkit-linear-gradient(top, #1d1c1c, #232222);
+    background-image: -moz-linear-gradient(top, #1d1c1c, #232222);
+    background-image: -ms-linear-gradient(top, #1d1c1c, #232222);
+    background-image: -o-linear-gradient(top, #1d1c1c, #232222);
+    background-image: linear-gradient(to bottom, #1d1c1c, #232222);
+    text-decoration: none;
+}
+.NuestroEquipo button:active {
+    background: #787878;
+}
+
+#BtnCentro{
+    display:none;
+}
+
+@media screen and (max-width: 1000px) {
+    .title{ width: 370px;}
+    .BtnSucursal{margin-left: 90px;}
+}
+
+@media screen and (max-width: 600px) {
+    .title{ margin:20px 0px !important;}
+    .BtnSucursal{ margin-left: 77px; width: 340px;}
+    #titulo{ margin-left: -26px; width: 285px; padding-left: 0px;}
+}
+
+@media screen and (max-width: 400px) {
+    .title{ font-size: 30px; padding:15px 0px !important; width: 335px;}
+
+}

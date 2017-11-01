@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title> Bienes Raíces </title>
+    <link href="Librerias/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="Style/StyleIndexContacto.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Librerias/axios.min.js"></script>
+    <link href="Style/StyleReservaOnlinePropiedad.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Librerias/js/jquery.min.js"></script>
+    <script type="text/javascript" src="Js/ReservaOnline.js"></script>
+    
+
+</head>
+<body>
+    <iframe id="IframeMenu" scrolling="no" width="100%" src="Menu.html"></iframe>
+    <section id="Inicio">
+        <div id="ProyectoPrincipal">
+            <img src="images/casaprincipal.webp" alt="Proyecto Principal" >
+            <div id="ProyectoPrincipalContenido">
+            <h3>Proyecto totalmente equipado en Montevideo, Carrasco Norte </h3>
+            <p>Casa de 4 Dormitorios | 2 Baños | 250 m2 Edificados | 400 m2 Total<br> </p>
+            </div>
+        </div>
+        <div id="PropiedadesVenta">
+            <h1> ÚLTIMAS PROPIEDADES EN VENTA </h1>
+            <div class="container-fluid">
+                <div id="InicioVentas" class="row">
+                             
+                </div>
+                
+            </div>
+        </div>
+
+            <div id="PropiedadesAlquiler">
+                    <h1>ÚLTIMAS PROPIEDADES EN ALQUILER</h1>
+                    <div id="InicioAlquiler" class="container-fluid">
+
+                    </div>
+            </div>
+
+            <div id="ComentariosClientes">
+                <h1> NUESTROS CLIENTES OPINAN </h1>
+                <div class="container-fluid">
+                    <div class="row">
+                                <div class="col-sm-4">
+                                    <p>Servicio muy profesional. Trato amable, excelente calidad de servicio y personal muy eficiente y 
+                                        eficaz. Sin duda muy recomendable tanto para venta o alquiler.</p>
+                                    <h3>Eva Teruel, Cliente Satisfecho</h3>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p>Servicio muy profesional. Trato amable, excelente calidad de servicio y personal muy eficiente y 
+                                        eficaz. Sin duda muy recomendable tanto para venta o alquiler.</p>
+                                    <h3>Eva Teruel, Cliente Satisfecho</h3> 
+                                </div>
+                                <div class="col-sm-4">
+                                <p>Servicio muy profesional. Trato amable, excelente calidad de servicio y personal muy
+                                    eficiente y eficaz. Sin duda muy recomendable tanto para venta o alquiler.</p>
+                                <h3>Eva Teruel, Cliente Satisfecho</h3>
+                                </div>
+                    </div>
+                </div>          
+            </div>
+                
+    </section> 
+    <section id="ReservaOnlinePropiedad">
+        <div id="CargarInmuebleReservaOnline">
+            <div class="container">
+                <div id="DivPannel" class="panelb panel-success col-sm-6">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="Pie" class="Pie">
+        <iframe id="IframePie" scrolling="no" width="100%"src="Pie.html"></iframe>
+    </section>
+</body>
+<script>
+   var ContadorVentas=1;
+   var ContadorAlquiler=1;
+
+   $(document).ready(function(){
+       InicioVentas();
+       InicioAlquiler();
+       OcultarReservaPropiedad();
+    });
+
+function InicioVentas(){
+
+                axios.get('http://localhost:3000/Inmueble')
+                    .then(function (response){
+                        
+                        for(var i=response.data.length; i>0; i--){
+
+                            if(response.data[i-1].TipoComercializacion === "Venta"){
+                               
+                                if(ContadorVentas === 4){ break;}
+                                var Div = '<div class="VentaInicio col-sm-4">';
+                                    Div += '<img id="Img'+response.data[i-1].id+'" onclick="CargarPropiedadParticular('+response.data[i-1].id+',&#39;Inicio&#39;)" class="ImgInicio" src='+response.data[i-1].Url1+' alt="Imagen Inmueble">';
+                                    Div += '<h2 class="PropiedadesVentaH2">'+response.data[i-1].TipoInmueble+'</h2>';
+                                    Div += '<p class="PropiedadesVentaP">'+response.data[i-1].Descripcion+'</p>'; 
+                                    Div += '<button class="PropiedadesVentaButton" onclick="CargarPropiedadParticular('+response.data[i-1].id+',&#39;Inicio&#39;)" type="button">Saber más</button>'; 
+                                    Div += '</div>';
+                                var DivRow = document.getElementById("InicioVentas");
+                                DivRow.innerHTML += Div;
+                                ContadorVentas++
+                            }                          
+                        }                       
+                    })
+                    .catch(function (errorResponse){
+                        console.log(errorResponse);
+                    });                            
+}
+
+function InicioAlquiler(){
+
+                axios.get('http://localhost:3000/Inmueble')
+                    .then(function (response){
+                        
+                        for(var i=response.data.length; i>0; i--){
+                            
+                            if(response.data[i-1].TipoComercializacion === "Alquiler"){
+                               
+                                if(ContadorAlquiler === 4){ break;}
+                                var Div  = '<div class="InmuebleAlquiler">';
+                                Div += '<div class="FotoOpaca col-sm-4">';
+                                Div += '<img id="Img'+response.data[i-1].id+'" class="ImgInicio"  onclick="CargarPropiedadParticular('+response.data[i-1].id+',&#39;Inicio&#39;)" src='+response.data[i-1].Url1+' alt="Imagen Inmueble">';
+                                Div += '</div>';
+                                Div += '<div class="col-sm-4 PropiedadesAlquilerInfo"><h2>'+response.data[i-1].Nombre+'</h2><p>'+response.data[i-1].Descripcion+'</p>';
+                                Div += '</div>';
+                                Div += '<div class="col-sm-4 PropiedadesAlquilerInfo">';
+                                Div += '<h2>'+response.data[i-1].TipoInmueble+'</h2><p>Dormitorios '+response.data[i-1].Dormitorios+' | Baños '+response.data[i-1].Baños+' | Garaje '+response.data[i-1].Garaje+' | '+response.data[i-1].Cualidad+'</p>';
+                                Div += '    <br><button  onclick="CargarPropiedadParticular('+response.data[i-1].id+',&#39;Inicio&#39;)">+ Info.</button>';
+                                Div += '</div>';
+                                Div += '</div>';
+
+                            var DivRow = document.getElementById("InicioAlquiler");
+                            DivRow.innerHTML += Div;
+                            ContadorAlquiler ++;
+                            }                          
+                        }                       
+                    })
+                    .catch(function (errorResponse){
+                        console.log(errorResponse);
+                    });                            
+} 
+
+</script>
+
+</html>

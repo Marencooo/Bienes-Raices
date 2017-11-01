@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title> Bienes Raíces </title>
+    <link href="../Librerias/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../Style/StyleCmanagerIndex.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../Librerias/axios.min.js"></script>
+    <script src="../Librerias/js/jquery.min.js"></script>
+    <script src="../Librerias/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Js/cmanager.js"></script>
+    <script type="text/javascript" src="../Js/Login.js"></script>
+    
+    
+</head>
+<body>
+    <iframe id="IframeMenu" scrolling="no" style="border:none;"  width="100%" height="52px" src="cmanager.html"></iframe>
+<h1> Bienvenido al Cmanager de Marenco Bienes Raices </h1>
+<h3> Aqui podras editar gran parte del Sitio web. </h3>
+     <ul class="">
+        <li class="Lista">Tendras control total sobre los <a href="Inmueble.html" target="_top">inmuebles</a>
+            <ul class="">
+                <li class="">Crear Inmuebes</li>
+                <li class="">Modificar Inmuebles</li>
+                <li class="">Eliminar Inmuebles</li>
+            </ul></li>
+            <li class="Lista">Tendras control total sobre el <a href="Equipo.html" target="_top">personal</a>
+            <ul class="">
+                <li class="">Crear Empleados</li>
+                <li class="">Modificar Empleado</li>
+                <li class="">Eliminar Empleados</li>
+            </ul></li>
+    </ul>
+
+
+</body>
+<script>
+window.onload = function() { ControlarLog(); };
+
+function ControlarLog(){
+    axios.get('http://localhost:3000/Login').then(function (response){
+
+        if(response.data[0].Check == false){
+            var a = document.createElement("a");
+            a.target = "_top";
+            a.href = "Login.html";
+            a.click();
+        } else if(response.data[0].Check == true){
+        }
+       })
+    .catch(function (errorResponse){
+        console.log(errorResponse);
+    });
+
+}
+</script>
+
+</html>

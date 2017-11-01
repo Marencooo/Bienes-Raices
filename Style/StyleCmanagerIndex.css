@@ -1,0 +1,14 @@
+body{
+    background: #6b5454;
+    color: white;
+    font-family: tahoma ;
+}
+
+h1, h3{
+    text-align: center;
+
+}
+
+.Lista{
+    margin: 20px;
+}

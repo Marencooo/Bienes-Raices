@@ -1,0 +1,171 @@
+body{
+    font-family: tahoma ;
+}
+
+#TablaInmueble td{
+    border: 1px solid #c1c1c1;
+    padding: 0px 5px;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    max-width: 120px;
+    height: 20px;
+    padding: 3px;
+    text-align: center;
+}
+
+.IdEmpleado{
+    display:none;
+}
+
+#Equipo{
+    padding: 60px;
+}
+
+#CerrarSecion{
+    display:none;
+}
+
+#IniciarSecion{
+    display:none;
+}
+
+#DivFormEquipo{
+    width: 600px !important;
+    margin: 0 auto !important;
+}
+
+.Login {
+    display: none;
+}
+
+a{
+    cursor: pointer;
+}
+#TablaEquipo td{
+    border: 1px solid #c1c1c1;
+    padding: 0px 5px !important;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    height: 20px;
+    padding: 3px;
+    text-align: center;
+}
+
+.ImagenEmpleado{
+    width: 60px;
+    height: 75px;
+}
+
+body{
+    background: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0px;
+}
+
+.DivForm{
+    border: 1px solid #c7c7c7;
+    border-radius: 8px;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.BotonForm{
+   background: #14e605;
+  background-image: -webkit-linear-gradient(top, #14e605, #107816);
+  background-image: -moz-linear-gradient(top, #14e605, #107816);
+  background-image: -ms-linear-gradient(top, #14e605, #107816);
+  background-image: -o-linear-gradient(top, #14e605, #107816);
+  background-image: linear-gradient(to bottom, #14e605, #107816);
+  border-radius: 7px;
+  font-size: 20px;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  margin:20px 0px 50px 40%;
+}
+
+.BotonForm:hover {
+  background: #107816;
+}
+
+.Tabla tr:hover{
+    background: #428a97;
+    color: white;
+    cursor: pointer;
+}
+
+.Tabla tr:first-child{
+    background: #174e58; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#174e58, #469baa); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#174e58, #469baa); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#174e58, #469baa); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#174e58, #469baa); /* Standard syntax */
+    color: white;
+    cursor: default;
+    height: 40px;
+    font-weight: bold;
+}
+
+#Titulo{
+    text-align: center;
+}
+
+.container{
+width: 100%;
+}
+
+#Contenedor{
+margin: 50px 0px;
+
+}
+table{
+    margin: 0 auto;
+    background: #f5f5f5;
+}
+
+.Oculto{
+    display:none;
+}
+
+.ImgBoton{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.ImagenInmueble{
+    width: 85px;
+    height: 50px;
+}
+
+#FormNuevo{
+    margin: 0 auto;
+    width: 850px;
+    height: 440px;
+    padding: 15px;
+}
+#FormModificar{
+    background: #428a97;
+    color: white;
+    margin: 0 auto;
+    width: 850px;
+    height: 440px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+input, select{
+    border-radius: 3px;
+    color: black;
+}
+
+.row{
+        margin: 20px 0 !important;
+}
+
+.DivCampos{
+    border: 1px solid;
+    margin: 3px;
+}

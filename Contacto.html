@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title> Bienes Raíces </title>
+    <link href="Librerias/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="Style/StyleIndexContacto.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/Contacto.js"></script>
+</head>
+<body>
+    <iframe id="IframeMenu" scrolling="no"  width="100%"src="Menu.html"></iframe>
+    <div id="ContenedorContacto">
+        <section id="Contacto" class="Contacto">
+                <div id="ContactoDiv">
+                    <h1>CONTACTO </h1>
+                    <h4>Sucursal Centro </h4>
+                    <a class="Oculto" target="_blank" href="https://www.google.com.uy/maps/place/Av.+18+de+Julio+998,+11100+Montevideo/data=!4m2!3m1!1s0x959f802d28b85ecd:0x7e88f193e2999a6b?sa=X&ved=0ahUKEwiF3JCf4ozXAhXKIZAKHTuQCWoQ8gEIJDAA"> Ir al Mapa</a>
+                    <iframe id="Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.005022010387!2d-56.19705528483951!3d-34.90632348107893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f802d28b85ecd%3A0x7e88f193e2999a6b!2sAv.+18+de+Julio+998%2C+11100+Montevideo!5e0!3m2!1ses!2suy!4v1503604596446"
+                    frameborder="0" allowfullscreen></iframe>
+                    <p class="Direccion Dir1">Av. 18 de Julio 998, 11100 Montevideo</p><br>
+                    <h4>Sucursal Malvin </h4>
+                    <a class="Oculto" target="_blank" href="https://www.google.com.uy/maps/place/Av+Italia+4762,+11400+Montevideo/data=!4m2!3m1!1s0x959f86d1018a180b:0x7451e5d137c235dd?sa=X&ved=0ahUKEwjv3sng4ozXAhUDDpAKHUK8A_oQ8gEIJDAA"> Ir al Mapa</a>
+                    <iframe id="Mapa2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.7344302906226!2d-56.108901052694!3d-34.88801449918736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4c14e4d9d5f08a8e!2sCampiglia+Construcciones!5e0!3m2!1ses!2suy!4v1499980125887" 
+                    frameborder="0" allowfullscreen></iframe>
+                    <p class="Direccion Dir2">Av Italia 4762, 11400 Montevideo</p>
+                    <div id="ContactoFormulario">
+                        <h3>Envíenos su consulta o comentario </h3>
+                        <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-12">
+                                    <form id="FormContacto" action="" method =“post”>
+                                        <div class="input-group">
+                                            <label class="input-group-addon" for="Sucursal">Sucursal</label> 
+                                            <select class="form-control" id="Sucursal">
+                                                <option value="Centro">Centro</option>
+                                                <option value="Malvin">Malvin</option>
+                                            </select>
+                                        </div><br>
+                                        <div class="form-group">
+                                            <input class="form-control" id="Nombre" type="text" name="Nombre" maxlength=25 title="Nombre" placeholder="Nombre*" required><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="Mail" type="email" name="Mail" placeholder="Mail*" required><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="Asunto" type="text" name="Asunto" maxlength=25 placeholder="Asunto*" required><br>
+                                        </div>
+                                        <textarea class="form-control" id="Mensaje" name="message" rows="3" cols="60" placeholder="Mensaje*" required></textarea><br><br>
+                                        <button onclick="EnviarMensaje()" class="btn btn-success" type="submit">Enviar</button>
+                                        <button class="btn btn-warning" type="reset" value="Reset">Reset</button>
+                                    </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <section id="Pie" class="Pie">
+    <iframe id="IframePie" scrolling="no" width="100%"src="Pie.html"></iframe>
+    </section>
+</body>
+</html>

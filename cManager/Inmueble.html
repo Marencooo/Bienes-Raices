@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title> Bienes Raíces </title>
+    <link href="../Librerias/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../Style/StyleCmanager.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../Librerias/axios.min.js"></script>
+    <script src="../Librerias/js/jquery.min.js"></script>
+    <script src="../Librerias/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Js/cmanager.js"></script>
+    
+    
+</head>
+<body>
+    <iframe id="IframeMenu" scrolling="no" style="border:none;"  width="100%" height="60px" src="cmanager.html"></iframe>
+    <div id="Inmueble" class="container Oculto">
+        <div class="row">
+            <div id="DivFormInmueble" class="DivForm">
+                <h2 id="Titulo"> Ingresar Inmueble</h2>
+                <a class="Oculto" id="MostrarFormAlta" onclick="FormAlata('Inmueble')">Dar de alta Inmueble</a>
+                <form  action="" method="get" id="FormInmueble" >
+                    <div class="row">
+                        <div style="display:none">
+                            <label class="control-label col-sm-2" for="name">Id Inmueble:</label> 
+                            <input type="text" class="col-sm-4" readonly="readonly" name="id">
+                        </div>
+                        <div class="">
+                            <label class="col-sm-2" for="name">Nombre Propiedad:</label>
+                            <input class="col-sm-4" type="text" maxlength="50" placeholder="Maximo 50 carácteres" name="name" required>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="">
+                            <label class="control-label col-sm-2" for="departamento">Departamento:</label>
+                            <select class="col-sm-4" name="departamento" id="Departamento" onclick="ActivarSelectBarrio()">
+                                <option value="Canelones">Canelones</option>
+                                <option value="Colonia">Colonia</option>
+                                <option value="Montevideo">Montevideo</option>
+                                <option value="Maldonado">Maldonado</option>
+                                <option value="Rocha">Rocha</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label class="control-label col-sm-2" for="barrio">Barrio</label>
+                            <select class="col-sm-4"  name="barrio" id="Barrio">
+                                <option value=""></option>
+                                <option value="Carrasco">Carrasco</option>
+                                <option value="La Blanqueada">La Blanqueada</option>
+                                <option value="Malvin">Malvin</option>
+                                <option value="Punta Gorda">Punta Gorda</option>
+                                <option value="Union">Union</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="">
+                            <label class="control-label col-sm-2" for="">Ruta imagen Principal</label>
+                            <input class="col-sm-2" type="text" name="imagen1" placeholder="Ingrese Ruta de imagen" required>
+                        </div>
+                        <div class="">
+                            <label class="control-label col-sm-2" for="">Ruta imagen 2</label>
+                            <input class="col-sm-2" type="text" name="imagen2" placeholder="Ingrese Ruta de imagen" required>
+                        </div>
+                        <div class="">
+                            <label class="control-label col-sm-2" for="">Ruta imagen 3</label>
+                            <input class="col-sm-2" type="text" name="imagen3" placeholder="Ingrese Ruta de imagen" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="">
+                            <label class="control-label col-sm-2" for="">Cantidad Dormitorios</label>
+                            <input class="col-sm-2" type="number" min="0" max="6" name="dormitorios" required>
+                        </div>
+                        <div class="">
+                            <label class="control-label col-sm-2" for="">Cantidad Baños</label>
+                            <input class="col-sm-2" type="number" min="0" max="4" name="baños" required>
+                        </div>
+                        <div class="">
+                            <label class="control-label col-sm-2" for="">Garaje</label>
+                            <input class="col-sm-2" type="number" min="0" max="60" name="garaje" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="">
+                            <label class="control-label col-sm-2" for="">Resaltar cualidad</label>
+                            <input class="col-sm-4" type="text" maxlength="35" placeholder="Maximo 35 carácteres" name="cualidad" required>
+                        </div>
+                        <div class="">
+                            <label class="control-label col-sm-2" for="">Descripcion</label>
+                            <input class="col-sm-4" type="text" name="descripcion" maxlength="250" placeholder="Maximo 250 carácteres" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="">
+                            <label class="control-label col-sm-2" for="">Tipo de Inmueble</label>
+                            <select class="col-sm-2"  name="TipoInmuebleNuevo">
+                                    <option value="Apartamento"> Apartamento</option>
+                                    <option value="Casa"> Casa</option>
+                                    <option value="Oficina"> Oficina</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label class="col-sm-2" for="">Tipo de Comercializacion</label>
+                            <select class="col-sm-1" name="tipo">
+                                <option value="Venta">Venta</option>
+                                <option value="Alquiler">Alquiler</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label class="col-sm-2" for="">Tipo Moneda</label>
+                            <select class="col-sm-1" name="moneda">
+                                <option value="U$S">U$S</option>
+                                <option value="$">$</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label class="col-sm-1" for="">Precio</label>
+                            <input class="col-sm-1" type="number" name="precio" required>
+                        </div>
+                    </div>
+                    <input type="button" id="ButtonModificar" class=" Oculto BotonForm" value="Modificar" onclick="NuevoInmueble('Modificar')" >
+                    <input type="button" id="ButtonNuevo" class=" BotonForm" value="Cargar" onclick="NuevoInmueble('Nuevo')" >
+                </form>
+            </div>
+            
+        </div>
+        <div id="Contenedor" class="row">
+            <table id="TablaInmueble" class="Tabla">
+            </table>
+        </div>
+    </div>
+
+</body>
+<script>
+    window.onload=function(){
+		MostrarInmueble();
+	}
+</script>
+</html>

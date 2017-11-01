@@ -1,0 +1,251 @@
+{
+  "Inmueble": [
+    {
+      "Nombre": "Tee Towers",
+      "Url1": "images/alquiler1.jpg",
+      "Url2": "images/alquiler21.jpg",
+      "Url3": "images/alquiler22.jpg",
+      "Departamento": "Montevideo",
+      "Barrio": "La Blanqueada",
+      "Dormitorios": "2",
+      "Baños": "3",
+      "Garaje": "1",
+      "Cualidad": "Gran vista al mar",
+      "Descripcion": "Espectacular casa a 1 cuadra de Playa Mansa, tiene cuatro dormitorios, 3 baños, dos en suite, mas dormitorio de servicio con baño, jardín con pisicina climatizada, cocina, living comedor.",
+      "TipoComercializacion": "Alquiler",
+      "Moneda": "U$S",
+      "Precio": "2000",
+      "TipoInmueble": "Casa",
+      "id": 20
+    },
+    {
+      "Nombre": "Prueba",
+      "Url1": "images/casa2.jpg",
+      "Url2": "images/casa21.jpg",
+      "Url3": "images/alquiler2.jpg",
+      "Departamento": "Montevideo",
+      "Barrio": "La Blanqueada",
+      "Dormitorios": "1",
+      "Baños": "1",
+      "Garaje": "1",
+      "Cualidad": "sdc",
+      "Descripcion": "response.data.l response.data.l response.data.l response.data.l response.data.l response.data.l response.data.l response.data.l response.data.l response.data.l response.data.l response.data.l response.data.l response.data.l response.data.l response.d",
+      "TipoComercializacion": "Venta",
+      "Moneda": "U$S",
+      "Precio": "332532",
+      "TipoInmueble": "Apartamento",
+      "id": 21
+    },
+    {
+      "Nombre": "prueba",
+      "Url1": "images/casa4.jpg",
+      "Url2": "images/casa41.jpg",
+      "Url3": "images/casa42.jpg",
+      "Departamento": "Canelones",
+      "Barrio": "Canelones",
+      "Dormitorios": "2",
+      "Baños": "2",
+      "Garaje": "2",
+      "Cualidad": "dwfw",
+      "Descripcion": "response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.da response.d",
+      "TipoComercializacion": "Alquiler",
+      "Moneda": "U$S",
+      "Precio": "2523",
+      "TipoInmueble": "Apartamento",
+      "id": 22
+    },
+    {
+      "Nombre": "Thays",
+      "Url1": "images/casa11.jpg",
+      "Url2": "images/casa12.jpg",
+      "Url3": "images/casa.jpg",
+      "Departamento": "Montevideo",
+      "Barrio": "La Blanqueada",
+      "Dormitorios": "2",
+      "Baños": "3",
+      "Garaje": "1",
+      "Cualidad": "Espacios verdes",
+      "Descripcion": "Moderna Casa en Barrio Privado, cuenta con vigilancia las 24 hs, living, comedor, cocina, 3 dormitorios en suite, lavadero, parrillero, piscina, cochera. Muy practica y comoda.",
+      "TipoComercializacion": "Venta",
+      "Moneda": "U$S",
+      "Precio": "230000",
+      "TipoInmueble": "Casa",
+      "id": 23
+    },
+    {
+      "Nombre": "Impuls",
+      "Url1": "images/casa1.jpg",
+      "Url2": "images/casa21.jpg",
+      "Url3": "images/casa22.jpg",
+      "Departamento": "Montevideo",
+      "Barrio": "La Blanqueada",
+      "Dormitorios": "4",
+      "Baños": "3",
+      "Garaje": "1",
+      "Cualidad": "Gran vista al mar",
+      "Descripcion": "Espectacular casa a 1 cuadra de Playa Mansa, tiene cuatro dormitorios, 3 baños, dos en suite, mas dormitorio de servicio con baño, jardín con pisicina climatizada, cocina, living comedor.",
+      "TipoComercializacion": "Venta",
+      "Moneda": "U$S",
+      "Precio": "200000",
+      "TipoInmueble": "Casa",
+      "id": 24
+    }
+  ],
+  "Equipo": [
+    {
+      "id": 2,
+      "Sucursal": "Centro",
+      "Nombre": "Mathias Castro",
+      "Puesto": "Agente de ventas",
+      "Mail": "Info@BienesRaices.com",
+      "Numero": "098787478",
+      "Foto": "images/agente2.jpg"
+    },
+    {
+      "id": 3,
+      "Sucursal": "Centro",
+      "Nombre": "Pepe Cortéz",
+      "Puesto": "Agente de ventas",
+      "Mail": "Info@BienesRaices.com",
+      "Numero": "098787478",
+      "Foto": "images/agente3.jpg"
+    },
+    {
+      "id": 4,
+      "Sucursal": "Centro",
+      "Nombre": "Romina Di Cessaro",
+      "Puesto": "Agente de alquileres",
+      "Mail": "Info@BienesRaices.com",
+      "Numero": "098787478",
+      "Foto": "images/agente4.jpg"
+    },
+    {
+      "id": 5,
+      "Sucursal": "Centro",
+      "Nombre": "LISA CASTRO",
+      "Puesto": "Agente de alquileres",
+      "Mail": "Info@BienesRaices.com",
+      "Numero": "098787478",
+      "Foto": "images/agente5.jpg"
+    },
+    {
+      "id": 6,
+      "Sucursal": "Centro",
+      "Nombre": "Diego Sperber",
+      "Puesto": "Agente de alquileres",
+      "Mail": "Info@BienesRaices.com",
+      "Numero": "098787478",
+      "Foto": "images/agente1.jpg"
+    },
+    {
+      "id": 7,
+      "Sucursal": "Malvin",
+      "Nombre": "Diego Sperber",
+      "Puesto": "Agente de ventas",
+      "Mail": "Info@BienesRaices.com",
+      "Numero": "098783456",
+      "Foto": "images/agente1.jpg"
+    },
+    {
+      "id": 8,
+      "Sucursal": "Malvin",
+      "Nombre": "LISA CASTRO",
+      "Puesto": "Agente de ventas",
+      "Mail": "Info@BienesRaices.com",
+      "Numero": "098783456",
+      "Foto": "images/agente6.jpg"
+    },
+    {
+      "id": 9,
+      "Sucursal": "Malvin",
+      "Nombre": "ALEXA GIMENEZ",
+      "Puesto": "Agente de ventas",
+      "Mail": "Info@BienesRaices.com",
+      "Numero": "098783456",
+      "Foto": "images/agente4.jpg"
+    },
+    {
+      "id": 10,
+      "Sucursal": "Malvin",
+      "Nombre": "Diego Sperber",
+      "Puesto": "Agente de alquileres",
+      "Mail": "Info@BienesRaices.com",
+      "Numero": "098783456",
+      "Foto": "images/agente2.jpg"
+    },
+    {
+      "id": 11,
+      "Sucursal": "Malvin",
+      "Nombre": "MARCOS LITO",
+      "Puesto": "Agente de alquileres",
+      "Mail": "Info@BienesRaices.com",
+      "Numero": "098783456",
+      "Foto": "images/agente3.jpg"
+    },
+    {
+      "Nombre": "Raul Caceres",
+      "Sucursal": "Centro",
+      "Numero": "098787478",
+      "Mail": "Info@BienesRaices.com",
+      "Puesto": "Agente de Ventas",
+      "Foto": "images/agente1.jpg",
+      "id": 12
+    }
+  ],
+  "Login": [
+    {
+      "Check": true,
+      "id": 1
+    }
+  ],
+  "Reserva": [
+    {
+      "IdInmueble": "7",
+      "Nombre": "Nombre",
+      "Fecha": "2017-10-04",
+      "Hora": "09:00",
+      "Mail": "mail@sdnv",
+      "id": 1
+    },
+    {
+      "IdInmueble": "8",
+      "Nombre": "Nombre",
+      "Fecha": "2017-10-04",
+      "Hora": "09:00",
+      "Mail": "mail@sdnv",
+      "id": 2
+    },
+    {
+      "IdInmueble": "6",
+      "Nombre": "Nombre",
+      "Fecha": "2017-10-04",
+      "Hora": "09:00",
+      "Mail": "mail@sdnv",
+      "id": 3
+    },
+    {
+      "IdInmueble": "8",
+      "Nombre": "Nombre",
+      "Fecha": "2017-10-10",
+      "Hora": "09:00",
+      "Mail": "mail@sdnv",
+      "id": 4
+    },
+    {
+      "IdInmueble": "9",
+      "Nombre": "Nombre",
+      "Fecha": "2017-10-04",
+      "Hora": "10:00",
+      "Mail": "mail@sdnv",
+      "id": 5
+    },
+    {
+      "IdInmueble": "7",
+      "Nombre": "Nombre",
+      "Fecha": "2017-10-05",
+      "Hora": "09:00",
+      "Mail": "mail@sdnv",
+      "id": 6
+    }
+  ]
+}

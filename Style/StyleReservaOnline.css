@@ -1,0 +1,166 @@
+body{
+    font-family: tahoma ;
+}
+
+#ReservaOnline{
+    padding-top: 70px;
+    color: white;
+    background: white;
+    text-align: center;
+    padding-bottom: 80px;
+    width: 100%;
+    min-height: 570px;
+}
+img{
+     cursor: pointer;
+}
+
+.ContenedorDatosInmueble{
+    position:relative;
+    bottom: 160px;
+
+}
+
+.BtnProxima, .BtnAnterior{
+    height: 170px;
+    width: 24px;
+    background: rgba(0, 0, 0, 0.42);
+    border: 0;
+    padding: 0;
+    font-size: 22px;
+    position: relative;
+    bottom: 175px;
+    font-weight: bold;
+}
+.BtnProxima:hover, .BtnAnterior:hover{
+    background: rgba(0, 0, 0, 0.72);
+}
+
+.BtnProxima{
+    right: 116px;
+}
+
+.BtnAnterior{
+    left: 116px;
+}
+
+.Venta, .Alquiler{
+    max-width: 315px;
+    min-width: 315px;
+    padding: 15px;
+    border-bottom: #151414 1px solid;
+    float:left;
+    height: 520px;
+}
+.Descripcion{
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+    overflow:hidden;
+    text-align: center;
+}
+
+.Container-fluid{
+    margin-left: 30px;
+    background-color: rgba(54, 93, 0, 0.73);
+    margin-right: 2%;
+    min-width: 400px;
+    padding:15px;
+}
+
+.Datos{
+    height: 33px;
+}
+
+#Log{
+    position: relative;
+    z-index: 1;
+    margin-left: 85% ;
+    padding: 10px;
+}
+.Precio{
+    font-size: 23px;
+    color: red;
+}
+
+#Salir{
+    position: relative;
+    z-index: 1;
+    margin-left: 85% ;
+    padding: 5px;
+}
+
+#TableInmuebles h2{
+    text-align: center;
+}
+
+.ReservaOnlineButton{
+    border-radius: 13px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #585858;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.ReservaOnlineButton:hover {
+    background: #777676;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 5px 12px #c7c7c7;
+    -moz-box-shadow: 0px 5px 12px #c7c7c7;
+    box-shadow: 0px 5px 12px #c7c7c7;
+}
+
+.ImagenTableInmuebles{
+    width: 290px;
+    height:180px;
+    display:block;
+    margin:auto;
+}
+
+#Inmuebles{
+    position: relative;
+}
+
+#FiltrosBusqueda{
+    display: none;
+}
+
+.FiltroDesplegable{
+    cursor: pointer;
+    height: 30px;
+    font-size: 18px;
+}
+
+#Filtros{
+    position: fixed;
+    bottom: 12%;
+    left: 4px;
+    width: 17%;
+    background-color: rgb(15, 80, 41);
+    padding: 10px;
+    border-radius: 5px;
+    top: 57px;
+    min-width: 270px;
+    height: 40px;
+}
+
+.Oculto{
+    display: none;
+}
+#DivFormAdministrador, #Salir, #Administrador {
+    color: black;
+}
+
+@media screen and (max-width: 708px) {
+    .Container-fluid{width: 350px !important; min-width: 350px;}
+}
+
+@media screen and (max-width: 500px) {
+    .Container-fluid{margin: 0px 10px;}
+}
+
+@media screen and (max-width: 500px) {
+    .Container-fluid{margin: 0px; padding:5px;}
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title> Bienes Raíces </title>
+    <link href="Librerias/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="Style/StyleEquipo.css" rel="stylesheet" type="text/css">
+    <link href="Style/StyleIndexContacto.css" rel="stylesheet" type="text/css">
+    <script src="Librerias/js/jquery.min.js"></script>
+    <script type="text/javascript" src="Librerias/axios.min.js"></script>
+    <script type="text/javascript" src="Js/NuestroEquipo.js"></script>
+<head>
+<body>
+    <iframe id="IframeMenu" scrolling="no"  width="100%" height="60px" src="Menu.html"></iframe>
+    <section id="NuestroEquipo" class="NuestroEquipo ">
+        <div class="row">
+            <div class="col-sm-5">
+                <h1 class="title"> NUESTROS AGENTES </h1>
+            </div>
+            <div class="col-sm-4 BtnSucursal">
+                <button type="button" id="BtnCentro" onclick="sucursal('Centro')">Ver sucursal Centro</button>
+                <button type="button" id="BtnMalvin" onclick="sucursal('Malvin')">Ver sucursal Malvin</button>
+            </div>          
+        </div>
+            
+        <div id="Equipo">
+
+                <div class="Contenedor">
+                    <h1 id="titulo"> </h1>
+                    <div id="empleados" class="row">
+                       
+                    </div>
+                </div>
+        </div>
+            <iframe id="IframePie" scrolling="no" width="100%"src="Pie.html"></iframe>
+    </section>
+    
+</body>
+</html>
