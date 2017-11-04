@@ -7,7 +7,7 @@ body{
     color: white;
     background: white;
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 35px;
     width: 100%;
     min-height: 570px;
 }
@@ -24,7 +24,7 @@ img{
 .BtnProxima, .BtnAnterior{
     height: 170px;
     width: 24px;
-    background: rgba(0, 0, 0, 0.42);
+    background: rgba(0, 0, 0, 0.12);
     border: 0;
     padding: 0;
     font-size: 22px;
@@ -33,15 +33,15 @@ img{
     font-weight: bold;
 }
 .BtnProxima:hover, .BtnAnterior:hover{
-    background: rgba(0, 0, 0, 0.72);
+    background: rgba(0, 0, 0, 0.35);
 }
 
 .BtnProxima{
-    right: 116px;
+    right: 114px;
 }
 
 .BtnAnterior{
-    left: 116px;
+    left: 114px;
 }
 
 .Venta, .Alquiler{
@@ -59,7 +59,8 @@ img{
     text-align: center;
 }
 
-.Container-fluid{
+#TableInmuebles {
+    min-height: 465px;
     margin-left: 30px;
     background-color: rgba(54, 93, 0, 0.73);
     margin-right: 2%;
@@ -79,7 +80,7 @@ img{
 }
 .Precio{
     font-size: 23px;
-    color: red;
+    color: #860d0d;
 }
 
 #Salir{
@@ -91,8 +92,8 @@ img{
 
 #TableInmuebles h2{
     text-align: center;
-}
-
+}    
+    
 .ReservaOnlineButton{
     border-radius: 13px;
     color: #ffffff;
@@ -138,11 +139,11 @@ img{
     left: 4px;
     width: 17%;
     background-color: rgb(15, 80, 41);
-    padding: 10px;
+    padding: 2px;
     border-radius: 5px;
-    top: 57px;
+    top: 48px;
     min-width: 270px;
-    height: 40px;
+    height: 31px;
 }
 
 .Oculto{
@@ -153,14 +154,16 @@ img{
 }
 
 @media screen and (max-width: 708px) {
-    .Container-fluid{width: 350px !important; min-width: 350px;}
+    #TableInmuebles {width: 315px !important; min-width: 315px !important;
+                     margin-left: 20%;}
 }
 
 @media screen and (max-width: 500px) {
-    .Container-fluid{margin: 0px 10px;}
+    #TableInmuebles { margin-left: 10%;}
 }
 
-@media screen and (max-width: 500px) {
-    .Container-fluid{margin: 0px; padding:5px;}
+@media screen and (max-width: 430px) {
+    #TableInmuebles { margin-left: 8%;}
 }
+
 

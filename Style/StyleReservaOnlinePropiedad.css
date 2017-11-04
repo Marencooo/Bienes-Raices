@@ -8,7 +8,7 @@
     height: 850px;
     background-color: rgba(86, 86, 86, 0.2);
     margin-bottom: 20px;
-    color: white;
+    color: black;
 }
 
 .respuesta{
@@ -16,23 +16,25 @@
     height: 384px;
     padding:40px;
     margin-top: 30px;
-    color: white;
+    color: black;
 }
 
 .titulo{
     background: #2b0101;
+    color:white;
 }
 
 .ParticularBtnProxima, .ParticularBtnAnterior{
     height: 350px;
     width: 42px;
-    background: rgba(0, 0, 0, 0.42);
+    background: rgba(0, 0, 0, 0.08);
     border: 0;
     padding: 0;
     font-size: 41px;
     position: relative;
     bottom: 350px;
     font-weight: bold;
+    color: white;
 }
 
 .DatosInmuebleParticular{
@@ -41,7 +43,7 @@
 }
 
 .ParticularBtnProxima:hover, .ParticularBtnAnterior:hover{
-    background: rgba(0, 0, 0, 0.72);
+    background: rgba(0, 0, 0, 0.28);
 }
 
 .ParticularBtnProxima{
@@ -74,7 +76,6 @@
 .Precio{
     font-size: 25px;
     font-weight: bold;
-    color: white;
 }
 
 #NameInmuebleParticular{
@@ -94,9 +95,64 @@
 #ReservaOnlinePropiedad img{
     width: 530px;
     height: 350px;
-    border-radius: 3px;
 }
 
 #ContactoFormulario{
 margin-left: 110px;
+}
+
+
+@media screen and (max-width: 1200px){
+    #ReservaOnlinePropiedad img{ width: 440px; height: 328px;}
+    .ParticularBtnAnterior { left: 355px;}
+    .ParticularBtnProxima, .ParticularBtnAnterior{ height: 328px;   bottom: 328px;  }
+    .DatosInmuebleParticular { position: relative; bottom: 328px;}
+    #UbicacionInmuebleParticular { width: 440px;}
+    #NameInmuebleParticular { width: 440px; }
+    #PalabraDescriptivaInmuebleParticular, #InfoInmuebleParticular,
+    #DescripcionInmuebleParticular { width: 440px; }
+    #ReservaFormulario { left: 495px;}
+    .container { margin-right: 0; margin-left: 0; }
+}
+
+@media screen and (max-width: 1000px){
+    #ReservaOnlinePropiedad img{ width: 330px; height: 220px;}
+    .ParticularBtnAnterior { left: 246px;}
+    .ParticularBtnProxima, .ParticularBtnAnterior{ height: 220px;   bottom: 220px;  }
+    .DatosInmuebleParticular { position: relative; bottom: 220px;}
+    #UbicacionInmuebleParticular { width: 330px;}
+    #NameInmuebleParticular { width: 330px; }
+    #DescripcionInmuebleParticular { width: 330px; }
+    #ReservaFormulario { left: 495px;}
+    .container { margin-right: 0; margin-left: 0; }
+    #PalabraDescriptivaInmuebleParticular, #InfoInmuebleParticular,
+    #DescripcionInmuebleParticular { width: 330px;}
+    #UbicacionInmuebleParticular { width: 330px;}
+    #NameInmuebleParticular { width: 330px; }
+    #FormCita { margin-left: 24px;}
+    #ReservaFormulario { left: 379px;}
+    .panelb { width: 360px;}     
+}
+
+@media screen and (max-width: 800px){
+    #ReservaFormulario { position:static;}
+    .panelb { width: 360px; height: 1280px; margin-left: 22%;}  
+    #ReservaFormulario { position: relative; left: -5px; width: 338px; top: -196px;
+                         background: #b1b1b1; border-radius: 8px; margin: 0 auto; } 
+}
+
+@media screen and (max-width: 700px){
+    .panelb {margin-left: 22%;}   
+}
+
+@media screen and (max-width: 600px){
+    .panelb {margin-left:16%;}   
+}
+
+@media screen and (max-width: 500px){
+    .panelb {margin-left: 5%;}   
+}
+
+@media screen and (max-width: 450px){
+    .panelb {margin-left: 1%;}   
 }

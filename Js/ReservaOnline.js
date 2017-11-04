@@ -6,6 +6,11 @@ var ContadorAlquiler = 1;
 var VerificarCita = "";
 var filtroDesplegado = false;
 
+$( document ).ready(function() {
+    CargarReservaOnline();
+    OcultarReservaPropiedad();
+
+});
 function CargarReservaOnline(){
 
                 axios.get('http://localhost:3000/Inmueble')
@@ -192,18 +197,20 @@ function AvisoReservaError(){
 function LimpiarFiltros(){
     var Form = document.getElementById("FormFiltros");
    
-    Form.Dormitorios.value="";
-    Form.TipoInmueble.value="";
     Form.TipoComercializacion.value="";
     Form.Departamento.value="";
     Form.Barrio.value="";
     
-    for (var r=0; r < Dormitorios.length; r++){
-            Dormitorios[r].checked=false;
+    for (var s=0; s < Form.TipoInmueble.length; s++){
+            Form.TipoInmueble[s].checked=false;
+    }
+
+    for (var r=0; r < Form.Dormitorios.length; r++){
+            Form.Dormitorios[r].checked=false;
     }
 
     Filtros();
-
+    DesplegarFiltro();
 }
 
 function Filtros(){
@@ -468,4 +475,5 @@ function RotarImagenes(Id,Boton,Url1,Url2,Url3){
         }
     }
 }
+
 

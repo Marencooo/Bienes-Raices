@@ -1,5 +1,3 @@
-var Check = false;
-
 function AgregarClase() {
     var x = document.getElementById("Menu");
     if (x.className === "TopNav") {
