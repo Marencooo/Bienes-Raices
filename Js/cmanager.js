@@ -54,8 +54,8 @@ function MostrarEmpleado(){
                         nuevaRow  = tableBody.insertRow();
 
                         var AccionCell = nuevaRow.insertCell(0);
-                        AccionCell.innerHTML ='<img class="ImgBoton" src="../images/del.png" onclick="EliminarEmpleado('+response.data[i].id+')" alt="Eliminar">';
-                        AccionCell.innerHTML +='<img class="ImgBoton" src="../images/edi.png" onclick="ModificarEmpleado('+response.data[i].id+')" alt="Modificar">';
+                        AccionCell.innerHTML ='<img class="ImgBoton" src="../Images/del.png" onclick="EliminarEmpleado('+response.data[i].id+')" alt="Eliminar">';
+                        AccionCell.innerHTML +='<img class="ImgBoton" src="../Images/edi.png" onclick="ModificarEmpleado('+response.data[i].id+')" alt="Modificar">';
 
                         var NombreCell             = nuevaRow.insertCell(1);
                         NombreCell.innerHTML       = response.data[i].Nombre;
@@ -348,8 +348,8 @@ function MostrarInmueble() {
                     nuevaRow  = tableBody.insertRow();
 
                     var AccionCell = nuevaRow.insertCell(0);
-                    AccionCell.innerHTML ='<img class="ImgBoton" src="../images/del.png" onclick="EliminarInmueble('+response.data[i].id+')" alt="Eliminar">';
-                    AccionCell.innerHTML +='<img class="ImgBoton" src="../images/edi.png" onclick="ModificarInmueble('+response.data[i].id+')" alt="Modificar">';
+                    AccionCell.innerHTML ='<img class="ImgBoton" src="../Images/del.png" onclick="EliminarInmueble('+response.data[i].id+')" alt="Eliminar">';
+                    AccionCell.innerHTML +='<img class="ImgBoton" src="../Images/edi.png" onclick="ModificarInmueble('+response.data[i].id+')" alt="Modificar">';
 
                     var NombreCell = nuevaRow.insertCell(1);
                     NombreCell.innerHTML = response.data[i].Nombre;

@@ -2,9 +2,9 @@
   "Inmueble": [
     {
       "Nombre": "Thays",
-      "Url1": "images/casa11.jpg",
-      "Url2": "images/casa12.jpg",
-      "Url3": "images/casa.jpg",
+      "Url1": "Images/casa11.jpg",
+      "Url2": "Images/casa12.jpg",
+      "Url3": "Images/casa.jpg",
       "Departamento": "Montevideo",
       "Barrio": "La Blanqueada",
       "Dormitorios": "2",
@@ -20,9 +20,9 @@
     },
     {
       "Nombre": "Impuls",
-      "Url1": "images/casa1.jpg",
-      "Url2": "images/casa21.jpg",
-      "Url3": "images/casa22.jpg",
+      "Url1": "Images/casa1.jpg",
+      "Url2": "Images/casa21.jpg",
+      "Url3": "Images/casa22.jpg",
       "Departamento": "Montevideo",
       "Barrio": "La Blanqueada",
       "Dormitorios": "4",
@@ -38,9 +38,9 @@
     },
     {
       "Nombre": "Tee Towers",
-      "Url1": "images/alquiler1.jpg",
-      "Url2": "images/alquiler21.jpg",
-      "Url3": "images/alquiler22.jpg",
+      "Url1": "Images/alquiler1.jpg",
+      "Url2": "Images/alquiler21.jpg",
+      "Url3": "Images/alquiler22.jpg",
       "Departamento": "Montevideo",
       "Barrio": "La Blanqueada",
       "Dormitorios": "2",
@@ -56,9 +56,9 @@
     },
     {
       "Nombre": "La casona",
-      "Url1": "images/casa2.jpg",
-      "Url2": "images/casa21.jpg",
-      "Url3": "images/alquiler2.jpg",
+      "Url1": "Images/casa2.jpg",
+      "Url2": "Images/casa21.jpg",
+      "Url3": "Images/alquiler2.jpg",
       "Departamento": "Montevideo",
       "Barrio": "La Blanqueada",
       "Dormitorios": "1",
@@ -74,9 +74,9 @@
     },
     {
       "Nombre": "Green",
-      "Url1": "images/casa4.jpg",
-      "Url2": "images/casa41.jpg",
-      "Url3": "images/casa42.jpg",
+      "Url1": "Images/casa4.jpg",
+      "Url2": "Images/casa41.jpg",
+      "Url3": "Images/casa42.jpg",
       "Departamento": "Canelones",
       "Barrio": "Canelones",
       "Dormitorios": "2",
@@ -99,7 +99,7 @@
       "Puesto": "Agente de ventas",
       "Mail": "Info@BienesRaices.com",
       "Numero": "098787478",
-      "Foto": "images/agente2.jpg"
+      "Foto": "Images/agente2.jpg"
     },
     {
       "id": 3,
@@ -108,7 +108,7 @@
       "Puesto": "Agente de ventas",
       "Mail": "Info@BienesRaices.com",
       "Numero": "098787478",
-      "Foto": "images/agente3.jpg"
+      "Foto": "Images/agente3.jpg"
     },
     {
       "id": 4,
@@ -117,7 +117,7 @@
       "Puesto": "Agente de alquileres",
       "Mail": "Info@BienesRaices.com",
       "Numero": "098787478",
-      "Foto": "images/agente4.jpg"
+      "Foto": "Images/agente4.jpg"
     },
     {
       "id": 5,
@@ -126,7 +126,7 @@
       "Puesto": "Agente de alquileres",
       "Mail": "Info@BienesRaices.com",
       "Numero": "098787478",
-      "Foto": "images/agente5.jpg"
+      "Foto": "Images/agente5.jpg"
     },
     {
       "id": 6,
@@ -135,7 +135,7 @@
       "Puesto": "Agente de alquileres",
       "Mail": "Info@BienesRaices.com",
       "Numero": "098787478",
-      "Foto": "images/agente1.jpg"
+      "Foto": "Images/agente1.jpg"
     },
     {
       "id": 7,
@@ -144,7 +144,7 @@
       "Puesto": "Agente de ventas",
       "Mail": "Info@BienesRaices.com",
       "Numero": "098783456",
-      "Foto": "images/agente1.jpg"
+      "Foto": "Images/agente1.jpg"
     },
     {
       "id": 8,
@@ -153,7 +153,7 @@
       "Puesto": "Agente de ventas",
       "Mail": "Info@BienesRaices.com",
       "Numero": "098783456",
-      "Foto": "images/agente6.jpg"
+      "Foto": "Images/agente6.jpg"
     },
     {
       "id": 9,
@@ -162,7 +162,7 @@
       "Puesto": "Agente de ventas",
       "Mail": "Info@BienesRaices.com",
       "Numero": "098783456",
-      "Foto": "images/agente4.jpg"
+      "Foto": "Images/agente4.jpg"
     },
     {
       "id": 10,
@@ -171,7 +171,7 @@
       "Puesto": "Agente de alquileres",
       "Mail": "Info@BienesRaices.com",
       "Numero": "098783456",
-      "Foto": "images/agente2.jpg"
+      "Foto": "Images/agente2.jpg"
     },
     {
       "id": 11,
@@ -180,7 +180,7 @@
       "Puesto": "Agente de alquileres",
       "Mail": "Info@BienesRaices.com",
       "Numero": "098783456",
-      "Foto": "images/agente3.jpg"
+      "Foto": "Images/agente3.jpg"
     },
     {
       "Nombre": "Raul Caceres",
@@ -188,7 +188,7 @@
       "Numero": "098787478",
       "Mail": "Info@BienesRaices.com",
       "Puesto": "Agente de Ventas",
-      "Foto": "images/agente1.jpg",
+      "Foto": "Images/agente1.jpg",
       "id": 12
     }
   ],
