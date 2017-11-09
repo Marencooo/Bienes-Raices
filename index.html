@@ -9,11 +9,12 @@
     <link href="Style/StyleReservaOnlinePropiedad.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="Librerias/js/jquery.min.js"></script>
     <script type="text/javascript" src="Js/ReservaOnline.js"></script>
+    <script type="text/javascript" src="Js/HeightIframeMenu.js"></script>
     
 
 </head>
 <body>
-    <iframe id="IframeMenu" scrolling="no" width="100%" src="Menu.html"></iframe>
+    <iframe id="IframeMenu" scrolling="no" onmouseover="AgregarHeight()" onmouseout="AchicarHeight()" width="100%" src="Menu.html"></iframe>
     <section id="Inicio">
         <div id="ProyectoPrincipal">
             <img src="Images/casaprincipal.webp" alt="Proyecto Principal" >

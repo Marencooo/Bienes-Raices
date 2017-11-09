@@ -8,6 +8,7 @@ body{
 #IframeMenu{
     border: 10px;
     border-color: white;
+    height: 47px;
 }
 #Equipo{
     min-width: 300px;
