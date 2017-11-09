@@ -1,13 +1,16 @@
 function AgregarClase() {
-    var x = document.getElementById("Menu");
-    if (x.className === "TopNav") {
-        x.className += " Responsive";
-        window.parent.document.getElementById("IframeMenu").style.height="150px";
-
+    var Menu = document.getElementById("Menu");
+    if (Menu.className === "TopNav") {
+        Menu.className += " Responsive";
     } else {
-        x.className = "TopNav";
-        window.parent.document.getElementById("IframeMenu").style.height="50px";
-
+        Menu.className = "TopNav";
     }
 }
+
+/*function MouseFueraMenu(){
+    var Menu = document.getElementById("Menu");
+    if (Menu.classList.contains("Responsive")) {
+        Menu.className = "TopNav";
+    }
+}*/
 

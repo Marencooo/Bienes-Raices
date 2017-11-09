@@ -254,6 +254,14 @@ h1{
     color: #5d0505;
 }
 
+.MenuDesplegado{
+    height: 152px !important;
+}
+
+.MenuNoDesplegado{
+    height: 47px !important;
+}
+
 #IframePie{
     height: 62px;
     position: relative;
@@ -325,6 +333,8 @@ h1{
 @media screen and (max-width: 767px) {
     #ContactoFormulario{margin-left: 20%;}
     #ContactoFormulario h3 { margin-left: 16px;}
+    .VentaInicio {margin: 15px auto !important; padding: 10px;}
+    .InmuebleAlquiler { margin: 15px 24% !important;}
 }
 
 @media screen and (max-width: 700px) {
@@ -338,11 +348,12 @@ h1{
 @media screen and (max-width: 600px) {
     #ProyectoPrincipalContenido{ position: relative; left:0%; top:0%; }
     #ProyectoPrincipal{ padding: 15px; margin: 5px; }
-    #PropiedadesVenta h1, #PropiedadesAlquiler h1 { padding: 10px; font-size: 20px; }
+    #PropiedadesVenta h1, #PropiedadesAlquiler h1 { padding: 10px; font-size: 20px; text-align: center; }
     #ContactoFormulario{margin-left: 8%;}
     .Oculto{margin-left: 41%;}
     .Direccion { margin-left: 25%;}
     #Contacto h4 { margin-left: 36%;}
+    .InmuebleAlquiler { margin: 15px 16% !important;}
 
 }
 
@@ -351,17 +362,12 @@ h1{
     #ProyectoPrincipal{margin: 5px; border-radius: 1px; }
     #PropiedadesVenta , #PropiedadesAlquiler, #ComentariosClientes { margin: 10px 5px; }
     #PropiedadesAlquiler { padding: 10px 5px; }
-    .InmuebleAlquiler {margin: 15px 6% !important; padding: 10px;}
-    .VentaInicio {margin: 15px 10% !important; padding: 10px;}
+    .InmuebleAlquiler {padding: 10px; margin: 15px 13% !important;}
+    .VentaInicio {padding: 10px; }
     #ContactoFormulario { width: 340px; margin: 0;}
     #ContactoFormulario h3 {font-size: 20px;}
     .Oculto {margin-left: 37%;}
     .Direccion {margin-left: 17%;}
     #Contacto h4 {margin-left: 29%;}
     h1 { text-align:left; margin-left: 8px;}  
-}
-
-@media screen and (max-width: 400px) {
-    .VentaInicio {margin: 15px 30px !important;}
-    .InmuebleAlquiler {margin: 15px 5px !important; padding: 0px;}
 }
