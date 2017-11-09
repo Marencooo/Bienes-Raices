@@ -37,24 +37,6 @@
       "id": 24
     },
     {
-      "Nombre": "Tee Towers",
-      "Url1": "Images/alquiler1.jpg",
-      "Url2": "Images/alquiler21.jpg",
-      "Url3": "Images/alquiler22.jpg",
-      "Departamento": "Montevideo",
-      "Barrio": "La Blanqueada",
-      "Dormitorios": "2",
-      "Baños": "3",
-      "Garaje": "1",
-      "Cualidad": "Gran vista al mar",
-      "Descripcion": "Espectacular casa a 1 cuadra de Playa Mansa, tiene cuatro dormitorios, 3 baños, dos en suite, mas dormitorio de servicio con baño, jardín con pisicina climatizada, cocina, living comedor.",
-      "TipoComercializacion": "Alquiler",
-      "Moneda": "U$S",
-      "Precio": "3000000",
-      "TipoInmueble": "Casa",
-      "id": 25
-    },
-    {
       "Nombre": "La casona",
       "Url1": "Images/casa2.jpg",
       "Url2": "Images/casa21.jpg",
@@ -89,6 +71,24 @@
       "Precio": "2523",
       "TipoInmueble": "Apartamento",
       "id": 28
+    },
+    {
+      "Nombre": "Tee Towers",
+      "Url1": "Images/alquiler1.JPG",
+      "Url2": "Images/alquiler21.jpg",
+      "Url3": "Images/alquiler22.jpg",
+      "Departamento": "Montevideo",
+      "Barrio": "La Blanqueada",
+      "Dormitorios": "2",
+      "Baños": "3",
+      "Garaje": "1",
+      "Cualidad": "Gran vista al mar",
+      "Descripcion": "Espectacular casa a 1 cuadra de Playa Mansa, tiene cuatro dormitorios, 3 baños, dos en suite, mas dormitorio de servicio con baño, jardín con pisicina climatizada, cocina, living comedor.",
+      "TipoComercializacion": "Alquiler",
+      "Moneda": "U$S",
+      "Precio": "3000000",
+      "TipoInmueble": "Casa",
+      "id": 29
     }
   ],
   "Equipo": [
