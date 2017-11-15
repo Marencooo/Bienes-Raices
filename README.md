@@ -14,3 +14,10 @@ debemos ejecutar:
 
 json-server --watch db.json  (siendo db.json el nombre del archivo con los datos).
 
+Las dependencias de este proyecto son:
+
+Bootstrap v3.3.7
+
+jQuery v3.2.1
+
+Axios v0.16.2 
