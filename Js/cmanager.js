@@ -152,9 +152,9 @@ function NuevoEmpleado(Accion){
     var Form                = document.getElementById("FormEquipo");
 
     if(Accion === "Modificar"){
-        var ButtonModificar     = document.getElementById("BtnModificar");
-        var ButtonNuevo         = document.getElementById("BtnNuevo");
-        var Titulo              = document.getElementById("Titulo");
+        var ButtonModificar     = document.getElementById("BtnModificarEmpleado");
+        var ButtonNuevo         = document.getElementById("BtnNuevoEmpleado");
+        var Titulo              = document.getElementById("TituloEquipo");
 
         EliminarEmpleado(Form.id.value, "Modificar");
     }
@@ -579,24 +579,24 @@ function NuevoInmueble(Accion){
                             Form.moneda.value= "";
                             Form.precio.value= "";
                             Form.TipoInmuebleNuevo.value= "";
+
+                            if(Accion === "Nuevo"){
+                                alert("El inmueble "+Nombre+" ah sido creado");
+                                window.scrollTo(0,0);
+                                MostrarInmueble();
+                             }
+
+                             if(Accion === "Modificar"){
+                                alert("El inmueble "+Nombre+" ah sido modificado");
+                                window.scrollTo(0,0);
+                                ButtonModificar.classList.add("Oculto");
+                                ButtonNuevo.classList.remove("Oculto");
+                                Titulo.innerHTML = "Ingresar Inmueble";
+                                var MostrarFormAlta = document.getElementById("MostrarFormAlta");
+                                    MostrarFormAlta.classList.add("Oculto");
+                             }
             }
-            if(Accion === "Modificar"){
-                alert("El inmueble "+Nombre+" ah sido modificado");
-                window.scrollTo(0,0);
-                ButtonModificar.classList.add("Oculto");
-                ButtonNuevo.classList.remove("Oculto");
-                Titulo.innerHTML = "Ingresar Inmueble";
-                var MostrarFormAlta = document.getElementById("MostrarFormAlta");
-                    MostrarFormAlta.classList.add("Oculto");
-             }
-            if(Accion === "Nuevo"){
-                alert("El inmueble "+Nombre+" ah sido creado");
-                window.scrollTo(0,0);
-                MostrarInmueble();
-             }
-            
-            
-            
+                    
             
 }
 
