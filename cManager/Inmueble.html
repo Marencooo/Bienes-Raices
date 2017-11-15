@@ -71,15 +71,15 @@
                     <div class="row">
                         <div class="">
                             <label class="control-label col-sm-2" for="">Cantidad Dormitorios</label>
-                            <input class="col-sm-2" type="number" min="0" max="6" name="dormitorios" required>
+                            <input class="col-sm-2" id="dormitorios" onkeyup="soloNumero('dormitorios')" type="text" maxlength="2" name="dormitorios" required>
                         </div>
                         <div class="">
                             <label class="control-label col-sm-2" for="">Cantidad Baños</label>
-                            <input class="col-sm-2" type="number" min="0" max="4" name="baños" required>
+                            <input class="col-sm-2" type="text" id="baños" onkeyup="soloNumero('baños')" maxlength="1" name="baños" required>
                         </div>
                         <div class="">
                             <label class="control-label col-sm-2" for="">Garaje</label>
-                            <input class="col-sm-2" type="number" min="0" max="60" name="garaje" required>
+                            <input class="col-sm-2" type="text" id="garaje" onkeyup="soloNumero('garaje')" maxlength="2" name="garaje" required>
                         </div>
                     </div>
                     <div class="row">
@@ -117,7 +117,7 @@
                         </div>
                         <div class="">
                             <label class="col-sm-1" for="">Precio</label>
-                            <input class="col-sm-1" type="number" name="precio" required>
+                            <input class="col-sm-1" type="text" id="precio" onkeyup="soloNumero('precio')" name="precio" required>
                         </div>
                     </div>
                     <input type="button" id="ButtonModificar" class=" Oculto BotonForm" value="Modificar" onclick="NuevoInmueble('Modificar')" >
