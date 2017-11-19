@@ -130,23 +130,30 @@ function VerificarHora(){
 
 function EnviarReserva(){
     var Form = document.getElementById("FormCita");
-
+    var expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(!Form.IdInmueble.value || !Form.Nombre.value || !Form.Fecha.value || !Form.Hora.value || !Form.Mail.value){
+        alert("Debe llenar todos los campos");
+    } else if (expr.test(Form.Mail.value)){
         var Reserva ={  IdInmueble : Form.IdInmueble.value,
-                        Nombre     :  Form.Nombre.value,
-                        Fecha      : Form.Fecha.value,
-                        Hora       : Form.Hora.value,
-                        Mail       : Form.Mail.value
-        }
+            Nombre     : Form.Nombre.value,
+            Fecha      : Form.Fecha.value,
+            Hora       : Form.Hora.value,
+            Mail       : Form.Mail.value
+            }
 
-        axios.post('http://localhost:3000/Reserva', Reserva)
+            axios.post('http://localhost:3000/Reserva', Reserva)
             .then(function (response){
-                   AvisoReservaCorrecta() 
+                AvisoReservaCorrecta() 
 
             })
             .catch(function (errorResponse){
                 console.log(errorResponse);
                 AvisoReservaError();
-            }); 
+            });
+
+       } else {
+        alert("La dirección de email no es valida.");
+        }
 }
 
 function  AvisoReservaNoDisponible(){

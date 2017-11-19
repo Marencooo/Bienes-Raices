@@ -1,0 +1,24 @@
+{
+  "name": "proyectojap2017",
+  "version": "1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marencooo/Bienes-Raices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marencooo/Bienes-Raices/issues"
+  },
+  "homepage": "https://github.com/Marencooo/Bienes-Raices#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
